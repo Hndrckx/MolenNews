@@ -8,8 +8,11 @@ use Illuminate\Http\Request;
 class FastController extends Controller
 {
     public function create(){
-    return view('pages.adminLil');
+        $blogs = Fast::all();
+    return view('pages.adminLil', compact('blogs'));
     }
+
+
 
     public function store(Request $request){
         $store = new Fast();
@@ -19,5 +22,12 @@ class FastController extends Controller
         $store->pictureLil = $request->pictureLil;
         $store->save();
         return redirect("/");
+    }
+
+
+    public function destroy($id){
+        $delete = Fast::find($id);
+        $delete->delete();
+        return redirect('/');
     }
 }

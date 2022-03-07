@@ -21,3 +21,16 @@
         <button type="submit" class="btn btn-primary mb-3 mt-3">Submit</button>
     </form>
     </section>
+
+    <section class="container my-3">
+        @foreach ($books as $book)
+            <div class="d-flex rounded bg-white p-2">
+                <h2 class="text-black mt-1">{{ $book->titleOg }}</h2>
+                <form action="/delete/{{ $book->id }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-info text-light bg-danger ms-3 mt-1 border-0">Delete</button>
+                </form>
+            </div>
+        @endforeach
+    </section>

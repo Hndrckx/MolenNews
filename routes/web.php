@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FastController;
 use App\Http\Controllers\ArticleController;
+use App\Models\Fast;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,6 +24,10 @@ Route::get('/adminlil', [FastController::class, 'create'])->name('create');
 
 Route::post('/adminlil', [FastController::class, 'store']);
 
+Route::delete('/delete/{id}', [FastController::class, 'destroy']);
+
 Route::get('/adminog', [ArticleController::class, 'create'])->name('create');
 
 Route::post('/adminog', [ArticleController::class, 'store']);
+
+Route::delete('/delete/{id}', [ArticleController::class, 'destroy']);

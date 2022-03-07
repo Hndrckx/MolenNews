@@ -24,11 +24,6 @@ return new class extends Migration
         });
     }
 
-    public function destroy($id){
-        $delete = Article::find($id);
-        $delete->delete();
-        return redirect('/adminlil');
-    }
 
     /**
      * Reverse the migrations.

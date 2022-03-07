@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 class ArticleController extends Controller
 {
     public function create(){
-        return view('pages.adminOg');
+        $books = Article::all();
+        return view('pages.adminOg', compact('books'));
     }
 
     public function store(Request $request){
@@ -19,5 +20,11 @@ class ArticleController extends Controller
         $store->pictureOg = $request->pictureOg;
         $store->save();
         return redirect("/");
+    }
+
+    public function destroy($id){
+        $delete = Article::find($id);
+        $delete->delete();
+        return redirect('/');
     }
 }
