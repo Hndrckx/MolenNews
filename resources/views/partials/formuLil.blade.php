@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container my-3">
 <form action="/adminlil" method="POST">
     @csrf
     <div class="mb-3">
@@ -11,13 +11,13 @@
     </div>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label text-light">Text</label>
-        <input type="text" name="textLil" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <textarea type="text" name="textLil" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
     </div>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label text-light">URL Picture</label>
         <input type="text" name="pictureLil" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
     
-    <button type="submit" class="btn btn-primary m-3">Submit</button>
+    <button type="submit" class="btn btn-primary mb-3 mt-3">Submit</button>
 </form>
 </section>

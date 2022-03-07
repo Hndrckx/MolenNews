@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FastController;
+use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +22,7 @@ Route::get('/', function () {
 Route::get('/adminlil', [FastController::class, 'create'])->name('create');
 
 Route::post('/adminlil', [FastController::class, 'store']);
+
+Route::get('/adminog', [ArticleController::class, 'create'])->name('create');
+
+Route::post('/adminog', [ArticleController::class, 'store']);

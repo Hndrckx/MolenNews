@@ -29,13 +29,15 @@
                         <a class="nav-link" href="/adminlil">Admin News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Admin Articles</a>
+                        <a class="nav-link" href="/adminog">Admin Articles</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     @yield('formulil')
+    @yield('formulog')
+    
 
 
 

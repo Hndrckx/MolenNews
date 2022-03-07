@@ -12,7 +12,7 @@ class FastController extends Controller
     }
 
     public function store(Request $request){
-        $store = new fast();
+        $store = new Fast();
         $store->titleLil = $request->titleLil;
         $store->textLil = $request->textLil;
         $store->authorLil = $request->authorLil;
