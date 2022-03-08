@@ -30,6 +30,11 @@ class FastController extends Controller
         return view('pages.lilNews', compact('littles'));
     }
 
+    public function show($id){
+        $shownews = Fast::find($id);
+        return view('pages.showAllNews', compact('shownews'));
+    }
+
 
     public function destroy($id){
         $delete = Fast::find($id);

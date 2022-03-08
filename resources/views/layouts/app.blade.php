@@ -39,6 +39,8 @@
     @yield('formulog')
     @yield('article_content')
     @yield('news_content')
+    @yield('show_article_content')
+    @yield('show_news_content')
     
 
 

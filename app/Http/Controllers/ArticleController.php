@@ -29,8 +29,8 @@ class ArticleController extends Controller
     }
 
     public function show($id){
-        $showarticle = Article::find($id);
-        return view('/show', compact('showarticle'));
+        $showarticles = Article::find($id);
+        return view('pages.showAllArticle', compact('showarticles'));
     }
 
     public function destroy($id){

@@ -24,7 +24,7 @@
 
     <section class="container my-3">
         @foreach ($books as $book)
-            <div class="d-flex rounded bg-white p-2">
+            <div class="d-flex justify-content-between rounded bg-white p-2 mt-2">
                 <h2 class="text-black mt-1">{{ $book->titleOg }}</h2>
                 <form action="/delete/{{ $book->id }}" method="POST">
                     @csrf

@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container d-flex justify-content-around mt-3">
     @foreach ($littles as $little )
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
@@ -12,6 +12,7 @@
                 </div>
             </div>
             </div>
+            <a href="/shownew/{{$little->id}}" class="btn btn-primary position-absolute bottom-0">Show</a>
         </div>  
     @endforeach
     </section>
