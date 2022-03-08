@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Fast;
 use Illuminate\Http\Request;
+use PhpParser\Node\Expr\New_;
 
 class FastController extends Controller
 {
@@ -22,6 +23,11 @@ class FastController extends Controller
         $store->pictureLil = $request->pictureLil;
         $store->save();
         return redirect("/");
+    }
+
+    public function index(){
+        $littles = Fast::all();
+        return view('pages.lilNews', compact('littles'));
     }
 
 

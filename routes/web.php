@@ -31,3 +31,7 @@ Route::get('/adminog', [ArticleController::class, 'create'])->name('create');
 Route::post('/adminog', [ArticleController::class, 'store']);
 
 Route::delete('/delete/{id}', [ArticleController::class, 'destroy']);
+
+Route::get('/article', [ArticleController::class, 'index']);
+
+Route::get('/news', [FastController::class, 'index']);

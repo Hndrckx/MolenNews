@@ -17,7 +17,7 @@ return new class extends Migration
         Schema::create('fasts', function (Blueprint $table) {
             $table->id();
             $table->string('titleLil');
-            $table->string('textLil');
+            $table->text('textLil');
             $table->string('authorLil');
             $table->string('pictureLil');
             $table->timestamps();

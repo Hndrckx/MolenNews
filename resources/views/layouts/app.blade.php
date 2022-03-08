@@ -20,10 +20,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">News</a>
+                        <a class="nav-link active" aria-current="page" href="/news">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Articles</a>
+                        <a class="nav-link" href="/article">Articles</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/adminlil">Admin News</a>
@@ -37,6 +37,8 @@
     </nav>
     @yield('formulil')
     @yield('formulog')
+    @yield('article_content')
+    @yield('news_content')
     
 
 
