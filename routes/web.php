@@ -24,7 +24,7 @@ Route::get('/adminlil', [FastController::class, 'create'])->name('create');
 
 Route::post('/adminlil', [FastController::class, 'store']);
 
-Route::delete('/delete/{id}', [FastController::class, 'destroy']);
+Route::delete('/delete/{id}/fast', [FastController::class, 'destroy']);
 
 Route::get('/adminog', [ArticleController::class, 'create'])->name('create');
 

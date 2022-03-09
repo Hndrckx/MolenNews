@@ -24,7 +24,7 @@ class ArticleController extends Controller
     }
 
     public function index(){
-        $bigs = Article::all();
+        $bigs = DB::table('articles')->orderBy('id', 'DESC')->get();
         return view('pages.ogNews', compact('bigs'));
     }
 

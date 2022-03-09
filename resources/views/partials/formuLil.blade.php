@@ -30,7 +30,7 @@
     @foreach ($blogs as $blog)
         <div class="d-flex justify-content-between rounded bg-white p-2 mt-2">
             <h2 class="text-black mt-1">{{ $blog->titleLil }}</h2>
-            <form action="/delete/{{ $blog->id }}" method="POST">
+            <form action="/delete/{{ $blog->id }}/fast" method="POST">
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="btn btn-info text-light bg-danger ms-3 mt-1 border-0">Delete</button>

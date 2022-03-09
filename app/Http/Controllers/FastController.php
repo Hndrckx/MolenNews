@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Fast;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use PhpParser\Node\Expr\New_;
 
 class FastController extends Controller
@@ -26,7 +27,7 @@ class FastController extends Controller
     }
 
     public function index(){
-        $littles = Fast::all();
+        $littles = DB::table('fasts')->orderBy('id', 'DESC')->get();
         return view('pages.lilNews', compact('littles'));
     }
 
