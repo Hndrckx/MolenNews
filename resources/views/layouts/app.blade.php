@@ -11,8 +11,8 @@
 
 <body class="bg-dark">
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand text-light" href="#"><b>MolenNews</b></a>
+        <div class="container-fluid w-75">
+            <a class="navbar-brand text-light w-25" href="/"><img class="w-75" src="{{asset('./img/Sans_titre-removebg-preview.png')}}"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,16 +20,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-light active" aria-current="page" href="/news">News</a>
+                        <a class="nav-link text-light fs-3 active me-3" aria-current="page" href="/news">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="/article">Articles</a>
+                        <a class="nav-link text-light fs-3 me-3" href="/article">Articles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="/adminlil">Admin News</a>
+                        <a class="nav-link text-light fs-3 me-3" href="/adminlil">Admin News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="/adminog">Admin Articles</a>
+                        <a class="nav-link text-light fs-3 me-3" href="/adminog">Admin Articles</a>
                     </li>
                 </ul>
             </div>
@@ -41,6 +41,7 @@
     @yield('news_content')
     @yield('show_article_content')
     @yield('show_news_content')
+    @yield('accueil_content')
     
 
 

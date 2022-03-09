@@ -30,6 +30,7 @@
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-info text-light bg-danger ms-3 mt-1 border-0">Delete</button>
+                    {{-- <a class="btn btn-info text-light bg-primary ms-3 mt-1 border-0">Edit</a> --}}
                 </form>
             </div>
         @endforeach

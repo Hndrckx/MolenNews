@@ -39,3 +39,5 @@ Route::get('/news', [FastController::class, 'index']);
 Route::get('/showarticle/{id}', [ArticleController::class, 'show']);
 
 Route::get('/shownew/{id}', [FastController::class, 'show']);
+
+// Route::get('edit/{id}', [ArticleController::class], 'edit');

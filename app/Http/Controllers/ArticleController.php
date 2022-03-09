@@ -38,4 +38,8 @@ class ArticleController extends Controller
         $delete->delete();
         return redirect('/');
     }
+
+    public function edit($id){
+        
+    }
 }
